@@ -1,14 +1,14 @@
 <?php
 
 // a Google Analytics account -- if specified, we will log activity
-define('GA_ACCOUNT', 'UA-XXXXXXX-X');
+//define('GA_ACCOUNT', 'UA-XXXXXXX-X');
 
 // should we allow users to connect on any port? If false, only allow port 70. If true,
 // we allow port 70, AND any port greater than 1024, since anything below that is reserved.
 define('ALLOW_ALL_PORTS', true);
 
 // an optional regex to restrict hosts too -- if a host doesn't match this, we won't process the request
-define('RESTRICT_TO_MATCH', "/myhost.com/");
+define('RESTRICT_TO_MATCH', "/sdf.org/");
 
 // lifetime of requests in the cache
 define('CACHE_LIFETIME', 3600);
@@ -24,11 +24,11 @@ define('APP_NAME', 'Gophper');
 define('MAX_FILESIZE', 10000000);
 
 // should we log stats to the db?
-define('LOG_STATS', true);
+//define('LOG_STATS', true);
 
 // if LOG_STATS is true, this specifies the connection to the database
-DB::$user = '';
-DB::$password = '';
-DB::$dbName = 'gopher';
+//DB::$user = '';
+//DB::$password = '';
+//DB::$dbName = 'gopher';
 
 ?>

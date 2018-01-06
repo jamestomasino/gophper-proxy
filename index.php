@@ -20,7 +20,7 @@ $app->get('/', function () use($app) {
     else {
       $params['file'] = "intro.html";
     }
-    
+
     $app->render('home.html', $params);
 });
 
@@ -88,7 +88,7 @@ function loadGopher($url, $input) {
     else {
       $result['url'] = $url;
       $result['data'] = $x->result;
-      
+
       if (!mb_check_encoding($result['data'], 'UTF-8')) {
         $result['data'] = utf8_encode($result['data']);
       }
