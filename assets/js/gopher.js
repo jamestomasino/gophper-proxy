@@ -225,7 +225,7 @@ GopherParser.prototype.entryToLink = function(e) {
                     $(result).
                         append("<input name='text' class='gopher' placeholder='input' />").
                         append(button);
-                    
+
                 }
 
                 // if there was no path, don't output a URL

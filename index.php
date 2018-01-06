@@ -4,7 +4,7 @@ require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
 require 'lib/GopherGetter.php';
-require_once 'lib/meekrodb.2.1.class.php';
+//require_once 'lib/meekrodb.2.1.class.php';
 require_once 'config.php';
 
 $app = new \Slim\Slim();
@@ -34,11 +34,6 @@ $app->get('/about', function () use($app) {
 $app->get('/file', function () use($app) {
 	$path = $_GET['path'];
 	$file = $_GET['name'];
-
-	// if you have sendfile, you can use this
-	// header("X-Sendfile: $path");
-	// header("Content-type: application/octet-stream");
-	// header('Content-Disposition: attachment; filename="' . basename($file) . '"');
 
 	$app->contentType(mime_content_type($path));
 	header("Content-type: " . mime_content_type($path));

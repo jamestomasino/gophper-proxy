@@ -27,7 +27,6 @@ class GopherGetter {
       $u = array_pop(explode("://", $u));
     }
 
-
     // strip any leading slash from the path
     $u = ltrim($u, '/');
     $this->uri = "gopher://$u";

@@ -8,7 +8,7 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
   $this->data["file"] = "intro.html";
 }
 ?>
-<html lang="en">
+<html lang="en" class="oldschool">
   <head>
     <meta charset="utf-8">
     <title>Gophper, a Gopher Proxy Tool</title>
@@ -16,9 +16,9 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
-    <link href="assets/css/colorbox.css" rel="stylesheet">
-    <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/colorbox.css" rel="stylesheet">
+    <script src="/javascripts/vendor/custom.modernizr.js"></script>
   </head>
 
   <body>
@@ -59,7 +59,7 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
 
       <div id="main" class="row container">
 	      <div id="spinner">
-	        <img src="assets/img/spinner.gif" />
+	        <img src="/assets/img/spinner.gif" />
 	      </div>
 	      <div class="large-12">
 	        <div id="intro" class="<?php echo $this->data["class"] ?>">
@@ -83,20 +83,20 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
       <div id="root_footer"></div>
     </div>
 
-    <script src="javascripts/vendor/jquery.js"></script>
+    <script src="/javascripts/vendor/jquery.js"></script>
 
-    <script src="javascripts/foundation/foundation.js"></script>
-    <script src="javascripts/foundation/foundation.forms.js"></script>
-    <script src="javascripts/foundation/foundation.cookie.js"></script>
-    <script src="javascripts/foundation/foundation.topbar.js"></script>
+    <script src="/javascripts/foundation/foundation.js"></script>
+    <script src="/javascripts/foundation/foundation.forms.js"></script>
+    <script src="/javascripts/foundation/foundation.cookie.js"></script>
+    <script src="/javascripts/foundation/foundation.topbar.js"></script>
 
   <script>
     $(document).foundation();
   </script>
 
-    <script src="assets/js/jquery.history.js"></script>
-    <script src="assets/js/jquery.colorbox.js"></script>
-    <script src="assets/js/gopher.js"></script>
-    <script src="assets/js/site.js"></script>
+    <script src="/assets/js/jquery.history.js"></script>
+    <script src="/assets/js/jquery.colorbox.js"></script>
+    <script src="/assets/js/gopher.js"></script>
+    <script src="/assets/js/site.js"></script>
   </body>
 </html>

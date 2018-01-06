@@ -189,13 +189,15 @@ $(document).ready(function() {
             $(".theme-switcher span").html("old school!");
         }
         else {
-            $(".theme-switcher span").html("modern");     
+            $(".theme-switcher span").html("modern");
         }
     };
 
     var theme = $.cookie('theme');
-    if(theme) {
-        $('html').addClass(theme);
+    if(theme && theme === 'notoldschool') {
+        $('html').removeClass('oldschool')
+        toggleTheme();
+    } else {
         toggleTheme();
     }
 
@@ -207,14 +209,14 @@ $(document).ready(function() {
             $.cookie('theme', "oldschool");
         }
         else {
-            $.cookie('theme', "");
+            $.cookie('theme', "notoldschool");
         }
 
         toggleTheme();
     });
 
     /**
-     * Handle existing URI on the browser's URL -- we'll only do this if the intro is hidden, 
+     * Handle existing URI on the browser's URL -- we'll only do this if the intro is hidden,
      * and there's something to load. We'll add the 'hide' class to the output in home.html to trigger this.
      */
     if ( window.location.pathname != "/" && $("#intro").hasClass("hide") ) {
