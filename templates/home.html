@@ -16,14 +16,9 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/colorbox.css" rel="stylesheet">
-    <script src="/javascripts/vendor/custom.modernizr.js"></script>
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    <?php include_once("stats.html"); ?>
+    <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+    <link href="assets/css/colorbox.css" rel="stylesheet">
+    <script src="javascripts/vendor/custom.modernizr.js"></script>
   </head>
 
   <body>
@@ -40,9 +35,9 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
             <ul class="left">
               <li class="active"><a href="/">Home</a></li>
               <li><a href="/about">About</a></li>
-              <li><a href="https://github.com/muffinista/gophper-proxy">Code</a></li>
+              <li><a href="https://github.com/jamestomasino/gophper-proxy">Code</a></li>
             </ul>
-            
+
             <ul class="right">
               <li><a href="#" class="theme-switcher">Theme: <span>modern</span></a></li>
               <li class="has-form search">
@@ -64,7 +59,7 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
 
       <div id="main" class="row container">
 	      <div id="spinner">
-	        <img src="/assets/img/spinner.gif" />
+	        <img src="assets/img/spinner.gif" />
 	      </div>
 	      <div class="large-12">
 	        <div id="intro" class="<?php echo $this->data["class"] ?>">
@@ -88,71 +83,20 @@ if ( ! array_key_exists('result', $this->data) && ! array_key_exists('file', $th
       <div id="root_footer"></div>
     </div>
 
-    <footer id="footer">
-      <div class="row fill-width">
-        <div class="small-8 columns">
-	        <p>Gophper &copy; 2013 <a href="http://muffinlabs.com/">Colin
-	            Mitchell</a>. Content delivered via Gophper belongs to its
-	          original authors. Enjoy!
-          </p>
-        </div>
-        <div class="small-4 columns">
-          <div class="social">
-            <div class="fb-like" data-href="http://gopher.muffinlabs.com/" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false"></div>
+    <script src="javascripts/vendor/jquery.js"></script>
 
-            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script src="javascripts/foundation/foundation.js"></script>
+    <script src="javascripts/foundation/foundation.forms.js"></script>
+    <script src="javascripts/foundation/foundation.cookie.js"></script>
+    <script src="javascripts/foundation/foundation.topbar.js"></script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=457571957665670";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-    <script src="/javascripts/foundation/foundation.js"></script>
-        
-<!---
-    <script src="/javascripts/foundation/foundation.alerts.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.placeholder.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.tooltips.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.section.js"></script>
-    <script src="/javascripts/foundation/foundation.magellan.js"></script>
---->    
-    
-    <script src="/javascripts/foundation/foundation.forms.js"></script>
-    <script src="/javascripts/foundation/foundation.cookie.js"></script>
-    <script src="/javascripts/foundation/foundation.topbar.js"></script>
-<!---    
-    <script src="/javascripts/foundation/foundation.orbit.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.joyride.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.clearing.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.reveal.js"></script>
-    
-    <script src="/javascripts/foundation/foundation.dropdown.js"></script>
-     --->
-  
   <script>
     $(document).foundation();
   </script>
 
-    <script src="/assets/js/jquery.history.js"></script>
-    <script src="/assets/js/jquery.colorbox.js"></script>
-    <script src="/assets/js/gopher.js"></script>
-    <script src="/assets/js/site.js"></script>
+    <script src="assets/js/jquery.history.js"></script>
+    <script src="assets/js/jquery.colorbox.js"></script>
+    <script src="assets/js/gopher.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>
